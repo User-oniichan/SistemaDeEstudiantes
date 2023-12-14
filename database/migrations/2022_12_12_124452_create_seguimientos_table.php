@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('seguimientos', function (Blueprint $table) {
             $table->id();
             $table->string('codEst');
-            $table->integer('idEst');
             $table->string('traAct', 2);
             $table->string('ofiAct', 50);
             $table->integer('satEst');  //0,1,2,3

@@ -42,13 +42,13 @@
         <select name="semMat" class="form-control mb-2" >
             <option value="">Seleccione Semestre</option>
             @for($i = 0; $i < 7; $i++) 
-                <option value="{{$i}}" @if(($xActAlumnos->turMat) == 1) {{ "SELECTED" }} @endif > Semestre {{$i}} </option>
+                <option value="{{$i}}" @if(($xActAlumnos->semMat) == 1) {{ "SELECTED" }} @endif > Semestre {{$i}} </option>
             @endfor
         </select>
         <select name="estMat" class="form-control mb-2">
-            <option value="" @if(($xActAlumnos->turMat) == '') {{ "SELECTED" }} @endif >Seleccione Estado de Matrícula</option>
-            <option value="0" @if(($xActAlumnos->turMat) == 0) {{ "SELECTED" }} @endif >Inactivo</option>
-            <option value="1" @if(($xActAlumnos->turMat) == 1) {{ "SELECTED" }} @endif >Activo</option>
+            <option value="" @if(($xActAlumnos->estMat) == '') {{ "SELECTED" }} @endif >Seleccione Estado de Matrícula</option>
+            <option value="0" @if(($xActAlumnos->estMat) == 0) {{ "SELECTED" }} @endif >Inactivo</option>
+            <option value="1" @if(($xActAlumnos->estMat) == 1) {{ "SELECTED" }} @endif >Activo</option>
         </select>
         <button class="btn btn-primary" type="submit">Actualizar</button>
     </form>

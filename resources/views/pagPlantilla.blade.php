@@ -9,10 +9,10 @@
   <body>
     
     <div class="container my-4">
-        <a href="{{ route('xInicio') }}" class="btn btn-primary"> Inicio </a>
-        <a href="{{ route('xGaleria') }}" class="btn btn-primary"> Galeria </a>
-        <a href="{{ route('xLista') }}" class="btn btn-primary"> Lista </a>
-        <a href="{{ route('xListaSeguimiento') }}" class="btn btn-primary"> Seguimiento </a>
+        <a href="{{ route('xInicio') }}" class="btn btn-info"> Inicio </a>
+        <a href="{{ route('xGaleria') }}" class="btn btn-info"> Galeria </a>
+        <a href="{{ route('xLista') }}" class="btn btn-info"> Lista </a>
+        <a href="{{ route('xListaSeguimiento') }}" class="btn btn-info"> Seguimiento </a>
         <!--<a href="{{ route('xListaCurso') }}" class="btn btn-primary"> Curso </a>-->
     </div>
 

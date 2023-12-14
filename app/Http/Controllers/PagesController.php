@@ -137,7 +137,6 @@ class PagesController extends Controller
         //return $request;        //Verificando "token" y datos recibidos
         $xUpdateSeguimiento = Seguimiento::findOrFail($id);
         
-        $xUpdateSeguimiento->idEst = $request->idEst;
         $xUpdateSeguimiento->traAct = $request->traAct;
         $xUpdateSeguimiento->ofiAct = $request->ofiAct;
         $xUpdateSeguimiento->satEst = $request->satEst;
@@ -239,9 +238,9 @@ class PagesController extends Controller
     }
     
     //Ejemplo de ruta con validación
-    public function fnGaleria ($numero=0) {
+    public function fnGaleria ($numero=null) {
         $valor = $numero;
-        $otro  = 25;
+        $otro  = 21;
 
         //return view('pagGaleria', ['valor'=>$numero, 'otro'=>25]);
         return view('pagGaleria', compact('valor', 'otro'));
